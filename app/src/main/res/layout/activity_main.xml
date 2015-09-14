@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quikr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/porter_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main layout -->
+        <FrameLayout
+            android:id="@+id/porter_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Upper Menu-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="9">
+
+                    <!-- Parcel count-->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.partho.porter.porterdelivery.utils.ui.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            quikr:fontName="fa.ttf"
+                            android:text="@string/fa_parcel_count"/>
+
+                        <TextView
+                            android:id="@+id/porter_parcel_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- API count-->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_marginTop="-3dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="API count"/>
+
+                        <TextView
+                            android:id="@+id/porter_api_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- SORT-->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.partho.porter.porterdelivery.utils.ui.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            quikr:fontName="fa.ttf"
+                            android:text="@string/fa_sort"
+                            android:textColor="@color/porter_bg_light_blue"
+                            />
+
+                        <Spinner
+                            android:id="@+id/porter_catalog_sort_selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--Upper Menu Ends-->
+
+
+                <!--Parcel Catalog starts-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/porter_parcels_catalog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+                <!--Parcel Catalog ends-->
+
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Nav drawer -->
+        <ListView
+            android:id="@+id/porter_home_nav_menu"
+            android:layout_width="205dp"
+            android:background="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

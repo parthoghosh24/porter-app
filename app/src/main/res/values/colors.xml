@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="porter_green">#ff178a1a</color>
+    <color name="porter_title_blue">#ff22378a</color>
+    <color name="porter_bg_light_blue">#ff3f618a</color>
+    <color name="porter_location_red">#ffea353b</color>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Porter Delivery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_parcel_detail">Parcel Detail</string>
+    <string name="title_activity_splash">Porter - Simplified Courier</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="fa_truck">&#xf0d1;</string>
+    <string name="fa_parcel">&#xf06b;</string>
+    <string name="fa_parcel_count">&#xf06b; Count</string>
+    <string name="fa_sort">&#xf160;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_portfolio">&#xf0ac;</string>
+    <string name="fa_rupee">&#xf156;</string>
+    <string name="fa_link">&#xf08e;</string>
+    <string name="fa_share">&#xf1e0;</string>
+    <string name="fa_message">&#xf0e0;</string>
+    <string name="fa_weight">&#xf24e;</string>
+    <string name="fa_marker">&#xf041;</string>
+    <string name="fa_clock">&#xf017;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_cart">&#xf07a;</string>
+</resources>

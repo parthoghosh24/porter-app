@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quikr="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:layout_marginBottom="15dp">
+
+
+    <com.partho.porter.porterdelivery.utils.ui.CustomTextView
+        android:id="@+id/porter_menu_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        quikr:fontName="fa.ttf"
+        />
+
+    <TextView
+        android:id="@+id/porter_menu_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:text="Home"/>
+
+</LinearLayout>
